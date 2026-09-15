@@ -726,295 +726,119 @@
     .deliverables-grid { grid-template-columns: 1fr; }
     footer { flex-direction: column; gap: 1rem; text-align: center; }
   }
+
+/* Offer readability and responsive layout */
+section[id] { scroll-margin-top: 90px; }
+.pain-content h3 { font-size: .9rem; margin-bottom: .4rem; }
+.hero-actions { flex-wrap: wrap; }
+.card-metric { gap: 1rem; }
+.metric-value { text-align: right; }
+.example-brief dt { color: var(--gold); font-weight: 700; margin-top: 1rem; }
+.example-brief dd { margin-top: .35rem; color: var(--white); line-height: 1.65; }
+@media (max-width: 600px) {
+  .nav-logo { font-size: .85rem; max-width: 52%; }
+  .nav-cta { font-size: .65rem; padding: .6rem .7rem; }
+  .hero-card, .pricing-body, .pricing-header { padding: 1.5rem; }
+  .metric-value { font-size: 1rem; }
+  .pricing-amount { font-size: 2.8rem; }
+  .btn-primary, .btn-ghost { padding: .9rem 1.2rem; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { animation: none !important; transition: none !important; } }
+
 </style>
+<meta name="description" content="FIS helps CIOs, CISOs, and senior IT leaders turn at-risk technology and AI initiatives into governed, decision-ready programs in 30 days. Six core deliverables; $2,500–$5,000 based on scope.">
 </head>
 <body>
-
-<!-- NAV -->
-<nav>
-  <a href="#" class="nav-logo">FIS <span>| Veriscope Flow Systems</span></a>
-  <ul class="nav-links">
-    <li><a href="#problem">The Problem</a></li>
-    <li><a href="#how">How It Works</a></li>
-    <li><a href="#pricing">Investment</a></li>
-    <li><a href="#about">About</a></li>
-  </ul>
-  <a href="https://calendly.com/cfowler-itexec/30min" target="_blank" class="nav-cta">Book Discovery Call</a>
-</nav>
-
-<!-- HERO -->
-<section class="hero">
-  <div class="hero-grid">
-    <div>
-      <div class="hero-eyebrow fade-up">
-        <div class="hero-eyebrow-line"></div>
-        <span class="hero-eyebrow-text">Flow Intelligence System</span>
-      </div>
-      <h1 class="fade-up">Your program <em>looks</em> managed.<br>Is it?</h1>
-      <p class="hero-sub fade-up">FIS is a 30-day professional engagement that brings clearer visibility, stronger governance, and disciplined execution to cybersecurity and technology programs. Built for CISOs, CIOs, and technology leaders, it turns fragmented project information into aligned priorities, accountable actions, and decision-ready reporting.</p>
-      <div class="hero-actions fade-up">
-        <a href="https://calendly.com/cfowler-itexec/30min" target="_blank" class="btn-primary">Book a Discovery Call</a>
-        <a href="#how" class="btn-ghost">See How It Works</a>
-      </div>
-    </div>
-
-    <div class="hero-card fade-up">
-      <div class="card-label">FIS Engagement Overview</div>
-      <div class="card-metric">
-        <span class="metric-label">Engagement Duration</span>
-        <span class="metric-value">30 Days</span>
-      </div>
-      <div class="card-metric">
-        <span class="metric-label">Scope-Based Fee</span>
-        <span class="metric-value gold">$2,500 – $5,000</span>
-      </div>
-      <div class="card-metric">
-        <span class="metric-label">Retainer Option</span>
-        <span class="metric-value">$2,000 / month</span>
-      </div>
-      <div class="card-metric">
-        <span class="metric-label">Delivery</span>
-        <span class="metric-value">Remote</span>
-      </div>
-      <div class="card-divider"></div>
-      <div class="card-label" style="margin-bottom:0.75rem;">Frameworks Used as Relevant</div>
-      <span class="card-tag">NIST CSF</span>
-      <span class="card-tag">NIST AI RMF</span>
-      <span class="card-tag">RAID Log</span>
-      <span class="card-tag">Stage Gate</span>
-      <span class="card-tag">RAG Reporting</span>
-    </div>
-  </div>
-</section>
-
-<!-- PROBLEM -->
-<section class="problem" id="problem">
-  <div class="section-inner">
-    <div class="section-label">
-      <div class="section-label-line"></div>
-      <span class="section-label-text">The Problem</span>
-    </div>
-    <h2 class="section-title">Governance gaps hide<br>behind good-looking dashboards.</h2>
-
-    <div class="problem-grid">
-      <div>
-        <p class="problem-statement">"Your security dashboard shows green. Your CISO presented clean metrics. Your board left reassured. None of that means your program is actually working."</p>
-        <p class="problem-body">Most organizations have a security roadmap. Fewer have a security program. The gap between the two is where risk lives — undetected, unremediated, and growing. By the time an audit or incident surfaces it, the cost is exponentially higher than fixing it would have been.</p>
-      </div>
-
-      <ul class="pain-list">
-        <li class="pain-item">
-          <span class="pain-number">01</span>
-          <div class="pain-content">
-            <h4>Compliance Theater Over Governance Discipline</h4>
-            <p>Closed findings marked complete without verified remediation. Coverage metrics counting tools that were never operationally tuned.</p>
-          </div>
-        </li>
-        <li class="pain-item">
-          <span class="pain-number">02</span>
-          <div class="pain-content">
-            <h4>Roadmaps Without Program Infrastructure</h4>
-            <p>No governance cadence. No escalation path. No accountability tied to outcomes. Initiatives slip because the operating model behind the roadmap never existed.</p>
-          </div>
-        </li>
-        <li class="pain-item">
-          <span class="pain-number">03</span>
-          <div class="pain-content">
-            <h4>Third-Party Risk That Stopped Being Managed</h4>
-            <p>Vendor assessments treated as procurement events, not ongoing monitoring relationships. The breach in the news is usually a trusted vendor with persistent access.</p>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
-</section>
-
-<!-- HOW IT WORKS -->
-<section class="how-it-works" id="how">
-  <div class="section-inner">
-    <div class="section-label">
-      <div class="section-label-line"></div>
-      <span class="section-label-text">How It Works</span>
-    </div>
-    <h2 class="section-title">30 days. Structured.<br>Artifact-driven. No guesswork.</h2>
-    <p class="section-sub">FIS is a professional 30-day engagement built around a delivery operating model. We assess the agreed initiative or workstreams, clarify ownership and priorities, and establish practical governance and reporting. Scope, deliverables, and success criteria are confirmed before work begins.</p>
-
-    <div class="steps-grid">
-      <div class="step-card">
-        <div class="step-number">01</div>
-        <div class="step-week">Week 1 – Days 1–7</div>
-        <h3 class="step-title">Discovery and Diagnostic</h3>
-        <p class="step-body">Review the agreed initiative or workstreams, available documentation, and stakeholder context. Identify delivery gaps, risks, and blockers; establish a RAID log; and prepare an initial leadership briefing. Relevant NIST guidance informs the review where included in scope.</p>
-      </div>
-
-      <div class="step-card">
-        <div class="step-number">02</div>
-        <div class="step-week">Week 2–3 – Days 8–21</div>
-        <h3 class="step-title">Governance and Execution</h3>
-        <p class="step-body">Establish ownership, escalation paths, and a governance cadence for priority issues. Implement the agreed reporting or dashboard structure, coordinate actions with accountable teams, and review progress with leadership. Technical remediation is separately scoped where required.</p>
-      </div>
-
-      <div class="step-card">
-        <div class="step-number">03</div>
-        <div class="step-week">Week 4 – Days 22–30</div>
-        <h3 class="step-title">Handoff and Operating Model</h3>
-        <p class="step-body">Deliver the agreed artifacts, document outstanding risks and next priorities, and hand over the governance and reporting routines. Walk the team through the operating model and discuss any follow-on support. Deliverables reflect the scope agreed at the start.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- DELIVERABLES -->
-<section class="deliverables" id="deliverables">
-  <div class="section-inner">
-    <div class="section-label">
-      <div class="section-label-line"></div>
-      <span class="section-label-text">What You Receive</span>
-    </div>
-    <h2 class="section-title">Practical deliverables.<br>Matched to your scope.</h2>
-
-    <p class="section-sub">The final deliverable set is agreed before work begins. Depending on scope, it may include the following; all eight are not automatically included in every engagement.</p>
-    <div class="deliverables-grid">
-      <div class="deliverable-item">
-        <div class="deliverable-check"></div>
-        <div class="deliverable-text">Scoped Program Assessment<span>Delivery and governance gaps with prioritized actions; relevant NIST guidance where agreed</span></div>
-      </div>
-      <div class="deliverable-item">
-        <div class="deliverable-check"></div>
-        <div class="deliverable-text">RAID Log — Initialized and Active<span>Risks, assumptions, issues, and dependencies for the agreed workstreams</span></div>
-      </div>
-      <div class="deliverable-item">
-        <div class="deliverable-check"></div>
-        <div class="deliverable-text">Executive Risk Briefing Deck<span>Leadership summary of identified risks, blockers, and action status</span></div>
-      </div>
-      <div class="deliverable-item">
-        <div class="deliverable-check"></div>
-        <div class="deliverable-text">Stage Gate Governance Framework<span>Structured decision points tied to program milestones and outcomes</span></div>
-      </div>
-      <div class="deliverable-item">
-        <div class="deliverable-check"></div>
-        <div class="deliverable-text">RAG Reporting Dashboard<span>Red / Amber / Green status reporting for continuous leadership visibility</span></div>
-      </div>
-      <div class="deliverable-item">
-        <div class="deliverable-check"></div>
-        <div class="deliverable-text">Third-Party Risk Register<span>Vendor tiering, review cadence schedule, and certification tracking</span></div>
-      </div>
-      <div class="deliverable-item">
-        <div class="deliverable-check"></div>
-        <div class="deliverable-text">Governance Operating Model<span>Repeatable cadence, escalation paths, and accountability structure</span></div>
-      </div>
-      <div class="deliverable-item">
-        <div class="deliverable-check"></div>
-        <div class="deliverable-text">30-Day Engagement Summary Report<span>Summary of work completed, validated progress, outstanding gaps, and next priorities</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- AI-ASSISTED DELIVERY -->
-<section class="how-it-works" id="ai-delivery">
-  <div class="section-inner">
-    <div class="section-label"><div class="section-label-line"></div><span class="section-label-text">How AI Supports FIS</span></div>
-    <h2 class="section-title">AI-assisted analysis.<br>Human-reviewed delivery.</h2>
-    <div class="about-body" style="max-width:800px; margin-top:2rem;">
-      <p>FIS combines AI, Smartsheet, and structured delivery workflows to turn project information into clearer signals for leadership.</p>
-      <p>AI helps review documentation, consolidate information, flag inconsistencies and potential gaps, identify and analyze risks and blockers, and prepare initial drafts of reports and governance deliverables.</p>
-      <p>I review and validate that work against the underlying project data, organizational requirements, governance standards, and stakeholder context before it becomes a final deliverable or informs a decision. <strong>I remain accountable for validation, judgment, and final delivery.</strong></p>
-    </div>
-  </div>
-</section>
-
-<!-- PRICING -->
-<section class="pricing" id="pricing">
-  <div class="section-inner">
-    <div class="section-label">
-      <div class="section-label-line"></div>
-      <span class="section-label-text">Investment</span>
-    </div>
-    <h2 class="section-title" style="text-align:center;">Straightforward pricing.<br>No ambiguity.</h2>
-
-    <div class="pricing-card">
-      <div class="pricing-header">
-        <div class="pricing-name">FIS 30-Day Engagement</div>
-        <div class="pricing-amount"><sup>$</sup>2,500<span style="font-size:1.5rem;font-weight:300;color:var(--muted);"> – $5,000</span></div>
-        <div class="pricing-range">A fixed fee based on delivery complexity and agreed scope.</div>
-      </div>
-      <div class="pricing-body">
-        <div class="about-body">
-          <p><strong>$2,500 — FIS Focused Engagement</strong><br>One primary initiative or contained delivery problem, limited stakeholder groups, and reasonably organized project information. Focused assessment, gap and blocker identification, a governance reset, and executive visibility deliverables.</p>
-          <p><strong>$5,000 — FIS Complex Engagement</strong><br>Multiple interconnected workstreams, broader stakeholder groups, fragmented or substantial project information, and more extensive governance, dashboard, risk and blocker, and execution-flow implementation.</p>
-          <p><strong>The fee is determined by delivery complexity and scope, not hours.</strong> We confirm initiatives, stakeholder groups, information complexity, and governance and reporting requirements before work begins. Any material change to scope or fee is agreed together before additional work proceeds.</p>
-        </div>
-        <div class="pricing-includes">Included within the agreed scope:</div>
-        <ul class="pricing-features">
-          <li class="pricing-feature">30-day professional engagement with senior-level delivery</li>
-          <li class="pricing-feature">An agreed set of governance and executive visibility deliverables</li>
-          <li class="pricing-feature">Weekly executive briefings throughout engagement</li>
-          <li class="pricing-feature">Relevant NIST CSF and NIST AI RMF guidance where included in scope</li>
-          <li class="pricing-feature">Prioritized risks, blockers, and action plans with accountable owners</li>
-          <li class="pricing-feature">Governance operating model handoff and team training</li>
-        </ul>
-        <a href="https://calendly.com/cfowler-itexec/30min" target="_blank" class="btn-full">Book Your Discovery Call</a>
-        <p class="pricing-note">Discovery call is complimentary and carries no obligation. Retainer available at $2,000/month following initial engagement.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ABOUT -->
-<section class="about" id="about">
-  <div class="section-inner">
-    <div class="section-label">
-      <div class="section-label-line"></div>
-      <span class="section-label-text">About</span>
-    </div>
-    <h2 class="section-title">Built by a practitioner.<br>Not a theory.</h2>
-
-    <div class="about-grid">
-      <div class="about-credentials">
-        <div class="credential-name">Christopher L. Fowler Sr.</div>
-        <div class="credential-title">Cybersecurity &amp; Technology Delivery Architect<br>Founder, Veriscope Flow Systems LLC</div>
-        <ul class="credential-list">
-          <li>14 years enterprise IT program management</li>
-          <li>Former CISO Portfolio Lead, DFIN</li>
-          <li>AI and ML implementation, Huntsman International</li>
-          <li>Senior IT Program Manager, UNLV</li>
-        </ul>
-        <div class="cert-row">
-          <span class="cert-badge">PMP</span>
-          <span class="cert-badge">CSM</span>
-          <span class="cert-badge">CSPO</span>
-          <span class="cert-badge">MBA</span>
-          <span class="cert-badge">NIST CSF</span>
-          <span class="cert-badge">NIST AI RMF</span>
-        </div>
-      </div>
-
-      <div class="about-body">
-        <p>I developed the Flow Intelligence System as a delivery operating model to improve visibility, alignment, governance, and execution across complex technology and cybersecurity programs. It draws on 14 years of enterprise IT program management and a recurring pattern: <strong>Polished dashboards. Clean audit reports. Programs that looked managed but weren't.</strong></p>
-        <p>In my previous role as CISO Portfolio Lead at Donnelley Financial Solutions, I managed a compliance portfolio where audit prep was treated as a project with a start date tied to the notice — not a continuous operational discipline. We changed that by building evidence collection into normal program cadence, treating every control gap as a live remediation item, and establishing executive visibility into risk posture on a continuous basis.</p>
-        <p>By the time auditors arrived, we were confirming work already done. Not discovering problems under pressure. <strong>FIS is that operating model, packaged as a 30-day engagement.</strong></p>
-        <p>When compliance runs continuously, audits stop being events you survive. They become proof of work you have already done.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CTA -->
-<section class="cta-section" id="cta">
-  <div class="section-inner">
-    <h2 class="cta-title">Ready to stop managing<br>the appearance of governance?</h2>
-    <p class="cta-sub">Book a complimentary 30-minute discovery call. We will discuss your delivery challenges, clarify the likely scope, and determine whether FIS is the right fit for your organization.</p>
-    <a href="https://calendly.com/cfowler-itexec/30min" target="_blank" class="btn-primary" style="display:inline-block; font-size:0.9rem; padding:1rem 2.5rem;">Schedule Your Discovery Call</a>
-    <p class="cta-note">No commitment required. Discovery calls are complimentary.</p>
-  </div>
-</section>
-
-<!-- FOOTER -->
-<footer>
-  <div class="footer-logo">FIS <span>| Veriscope Flow Systems LLC</span></div>
-  <div class="footer-copy">© 2026 Veriscope Flow Systems LLC. All rights reserved.</div>
-</footer>
-
-</body>
-</html>
+<nav aria-label="Main navigation">
+<a href="#" class="nav-logo">FIS <span>| Veriscope Flow Systems</span></a>
+<ul class="nav-links"><li><a href="#deliverables">Deliverables</a></li><li><a href="#how">30-Day Plan</a></li><li><a href="#pricing">Investment</a></li><li><a href="#about">About</a></li></ul>
+<a href="https://calendly.com/cfowler-itexec/30min" target="_blank" rel="noopener noreferrer" class="nav-cta">Book Discovery Call</a></nav>
+<main>
+<section class="hero"><div class="hero-grid"><div>
+<div class="hero-eyebrow"><div class="hero-eyebrow-line"></div><span class="hero-eyebrow-text">Flow Intelligence System</span></div>
+<h1>Your program <em>looks</em> managed.<br>Is it?</h1>
+<p class="hero-sub">In 30 days, turn an at-risk technology or AI initiative into a governed program with documented risks, accountable owners, decision gates, and an executive-ready path forward.</p>
+<p class="problem-body" style="margin-bottom:2rem;">For CIOs, CISOs, and senior IT leaders who need to know what is at risk, who owns it, and what needs to happen next.</p>
+<div class="hero-actions"><a href="https://calendly.com/cfowler-itexec/30min" target="_blank" rel="noopener noreferrer" class="btn-primary">Book a Discovery Call</a><a href="#deliverables" class="btn-ghost">See the Six Deliverables</a></div>
+</div><div class="hero-card"><div class="card-label">Your 30-Day Engagement</div>
+<div class="card-metric"><span class="metric-label">First deliverable</span><span class="metric-value">Week 1 Risk Brief</span></div>
+<div class="card-metric"><span class="metric-label">Day-30 outcome</span><span class="metric-value gold">Decision-ready plan</span></div>
+<div class="card-metric"><span class="metric-label">Core deliverables</span><span class="metric-value">Six</span></div>
+<div class="card-metric"><span class="metric-label">Scope-based fee</span><span class="metric-value">$2,500 – $5,000</span></div>
+<div class="card-metric"><span class="metric-label">Delivery</span><span class="metric-value">Remote · 30 days</span></div>
+<div class="card-divider"></div><p class="problem-body">Clear risks. Named owners. Defined decisions. A practical path forward.</p>
+</div></div></section>
+<section class="problem" id="problem"><div class="section-inner"><div class="section-label"><div class="section-label-line"></div><span class="section-label-text">The Problem</span></div>
+<h2 class="section-title">Reporting exists.<br>Clarity is missing.</h2>
+<div class="problem-grid"><div><p class="problem-statement">“What is actually at risk, who owns it, what decisions are unresolved, and what needs to happen next?”</p>
+<p class="problem-body">An initiative can have meetings, status reports, and governance documents while leadership still lacks a reliable answer. FIS helps leaders regain control of consequential technology and AI initiatives by making risks, decisions, ownership, escalation, and next steps explicit.</p></div>
+<ul class="pain-list">
+<li class="pain-item"><span class="pain-number">01</span><div class="pain-content"><h3>Risks without accountable owners</h3><p>Known issues remain open because responsibility and escalation paths are unclear.</p></div></li>
+<li class="pain-item"><span class="pain-number">02</span><div class="pain-content"><h3>Decisions without a clear path</h3><p>Work stalls when evidence, approval responsibilities, and decision gates are undefined.</p></div></li>
+<li class="pain-item"><span class="pain-number">03</span><div class="pain-content"><h3>Status without executive visibility</h3><p>Fragmented information makes it difficult to distinguish progress from unresolved exposure.</p></div></li>
+</ul></div></div></section>
+<section class="deliverables" id="deliverables"><div class="section-inner"><div class="section-label"><div class="section-label-line"></div><span class="section-label-text">What You Receive</span></div>
+<h2 class="section-title">Six practical deliverables.<br>One governed path forward.</h2>
+<p class="section-sub">The engagement includes these six core deliverables. Their depth and coverage are matched to the initiative or workstreams agreed before work begins.</p>
+<div class="deliverables-grid"><div class="deliverable-item"><div class="deliverable-check" aria-hidden="true"></div><div class="deliverable-text"><strong>Program Risk Brief</strong><span>Identifies material risks, ownership gaps, unresolved decisions, and immediate escalation priorities. Delivered by the end of Week 1.</span></div></div>
+<div class="deliverable-item"><div class="deliverable-check" aria-hidden="true"></div><div class="deliverable-text"><strong>Governance Alignment Review</strong><span>Reviews relevant program practices against applicable NIST CSF and NIST AI RMF considerations within the agreed scope.</span></div></div>
+<div class="deliverable-item"><div class="deliverable-check" aria-hidden="true"></div><div class="deliverable-text"><strong>Decision &amp; Accountability Map</strong><span>Documents accountable owners, escalation paths, and decision responsibilities.</span></div></div>
+<div class="deliverable-item"><div class="deliverable-check" aria-hidden="true"></div><div class="deliverable-text"><strong>RAID + RAG Governance Pack</strong><span>Combines risks, assumptions, issues, dependencies, and red/amber/green status into decision-ready management artifacts.</span></div></div>
+<div class="deliverable-item"><div class="deliverable-check" aria-hidden="true"></div><div class="deliverable-text"><strong>Stage-Gate Decision Structure</strong><span>Defines the evidence, approvals, and conditions required before the initiative advances.</span></div></div>
+<div class="deliverable-item"><div class="deliverable-check" aria-hidden="true"></div><div class="deliverable-text"><strong>30-Day Executive Stabilization Brief</strong><span>Documents current state, priority actions, ownership, outstanding decisions, and the recommended path forward.</span></div></div></div>
+</div></section>
+<section class="how-it-works" id="how"><div class="section-inner"><div class="section-label"><div class="section-label-line"></div><span class="section-label-text">The 30-Day Plan</span></div>
+<h2 class="section-title">Useful intelligence in Week 1.<br>A clear handoff by Day 30.</h2>
+<div class="steps-grid">
+<div class="step-card"><div class="step-number">01</div><div class="step-week">Week 1 · Diagnose</div><h3 class="step-title">Program Risk Brief</h3><p class="step-body">Review supplied artifacts and stakeholder context. By the end of Week 1, leadership receives the highest-priority risks, unresolved decisions, ownership gaps, and immediate escalation items.</p></div>
+<div class="step-card"><div class="step-number">02</div><div class="step-week">Weeks 2–3 · Stabilize</div><h3 class="step-title">Ownership and decision discipline</h3><p class="step-body">Address governance gaps, map accountability and escalation, consolidate RAID and RAG reporting, and define stage-gate criteria with the responsible stakeholders.</p></div>
+<div class="step-card"><div class="step-number">03</div><div class="step-week">Week 4 · Operationalize</div><h3 class="step-title">Executive brief and handoff</h3><p class="step-body">Deliver the 30-Day Executive Stabilization Brief, review the path forward with leadership, and hand over the governance cadence and artifacts for continued use.</p></div>
+</div><p class="pricing-note">The outcome is a governed, decision-ready initiative. Technical remediation and resolution of every underlying program issue are outside this promise.</p>
+</div></section>
+<section class="problem" id="day-30"><div class="section-inner"><div class="section-label"><div class="section-label-line"></div><span class="section-label-text">How We Define Completion</span></div>
+<h2 class="section-title">Day 1: agree the baseline.<br>Day 30: verify the handoff.</h2>
+<p class="section-sub">At kickoff, we confirm the initiative boundary, available evidence, participants, and acceptance criteria. At handoff, leadership reviews the agreed deliverables against these conditions:</p>
+<div class="deliverables-grid">
+<div class="deliverable-item"><div class="deliverable-text"><strong>Risks are visible</strong><span>Priority risks and blockers are documented with evidence, status, and next actions.</span></div></div>
+<div class="deliverable-item"><div class="deliverable-text"><strong>Ownership is explicit</strong><span>Accountable owners and escalation paths are recorded; unresolved ownership decisions are clearly flagged.</span></div></div>
+<div class="deliverable-item"><div class="deliverable-text"><strong>Decisions have structure</strong><span>Outstanding decisions identify the responsible decision-maker, evidence needed, and applicable stage-gate criteria.</span></div></div>
+<div class="deliverable-item"><div class="deliverable-text"><strong>Leadership has a path forward</strong><span>The executive brief records current state, prioritized actions, outstanding decisions, and the governance cadence for ongoing use.</span></div></div>
+</div><p class="pricing-note">Completion criteria and timing assume timely access to the agreed information and stakeholder participation. Material changes are reviewed together.</p>
+</div></section>
+<section class="how-it-works" id="example"><div class="section-inner"><div class="section-label"><div class="section-label-line"></div><span class="section-label-text">Illustrative Deliverable Excerpt</span></div>
+<h2 class="section-title">What a decision-ready brief contains.</h2>
+<p class="section-sub">Fictional example of a Day-30 Executive Stabilization Brief. This illustrates the format; it is not a client result or case study.</p>
+<div class="hero-card" style="max-width:800px;margin-top:2rem;">
+<div class="card-label">Example · AI Pilot Rollout</div>
+<dl class="example-brief"><dt>Current state</dt><dd>Amber: the pilot is ready for review, but data-use approval remains unresolved.</dd><dt>Priority risk</dt><dd>The proposed rollout may proceed without documented approval of permitted data use.</dd><dt>Accountable owner</dt><dd>Program sponsor, coordinating with the data owner and relevant reviewers.</dd><dt>Decision gate</dt><dd>Confirm permitted data use and record approval before advancing to a wider rollout.</dd><dt>Next action</dt><dd>Assign the approval review, assemble the supporting evidence, and escalate any unresolved decision at the next leadership checkpoint.</dd></dl>
+</div></div></section>
+<section class="problem" id="client-involvement"><div class="section-inner"><div class="section-label"><div class="section-label-line"></div><span class="section-label-text">Your Team’s Involvement</span></div>
+<h2 class="section-title">Governance clarity.<br>Without another bureaucracy.</h2>
+<div class="about-body" style="max-width:800px;margin-top:2rem;"><p><strong>Supply existing information upfront.</strong> Share the agreed plans, status reports, risk logs, and decision records through the agreed access process.</p>
+<p><strong>Identify a sponsor and the relevant owners.</strong> We agree a limited set of stakeholder sessions during scoping, use asynchronous review where practical, and schedule a defined executive checkpoint.</p>
+<p><strong>Validate the findings and decisions.</strong> Your team confirms context, ownership, and approvals. Session count, document access, review responsibilities, and timing are confirmed before the engagement begins.</p></div>
+</div></section>
+<section class="how-it-works" id="ai-delivery"><div class="section-inner"><div class="section-label"><div class="section-label-line"></div><span class="section-label-text">How AI Supports Delivery</span></div>
+<h2 class="section-title">AI-assisted analysis.<br>Human-reviewed delivery.</h2>
+<div class="about-body" style="max-width:800px;margin-top:2rem;">
+<p><strong>AI’s role: governance analysis support.</strong> AI helps review supplied program artifacts against defined governance criteria, consolidate information, surface inconsistencies and potential risk or decision gaps, and draft evidence summaries and executive reporting.</p>
+<p>I validate the analysis against the underlying evidence, organizational requirements, and stakeholder context before it becomes a final deliverable or informs a decision. <strong>I remain accountable for judgment and final delivery.</strong></p>
+<p>FIS combines AI, Smartsheet, and existing delivery tools. Applicable NIST CSF and NIST AI RMF considerations guide the governance review; those frameworks are distinct from AI’s role in producing the work.</p>
+<p>Tool use and information handling are agreed to fit your organization’s requirements. The engagement delivers governance intelligence and practical artifacts, without custom software, custom integrations, or continuous monitoring infrastructure.</p>
+</div></div></section>
+<section class="pricing" id="pricing"><div class="section-inner"><div class="section-label"><div class="section-label-line"></div><span class="section-label-text">Investment</span></div>
+<h2 class="section-title" style="text-align:center;">A defined 30-day engagement.<br>A fee matched to scope.</h2>
+<div class="pricing-card"><div class="pricing-header"><div class="pricing-name">FIS 30-Day Engagement</div><div class="pricing-amount"><sup>$</sup>2,500<span style="font-size:1.5rem;font-weight:300;color:var(--muted);"> – $5,000</span></div><div class="pricing-range">Six core deliverables. Exact coverage and fee agreed before work begins.</div></div>
+<div class="pricing-body"><div class="about-body">
+<p><strong>$2,500 · Focused Engagement</strong><br>One primary initiative or contained delivery problem, limited stakeholder groups, and reasonably organized information. The six deliverables focus on that defined initiative.</p>
+<p><strong>$5,000 · Complex Engagement</strong><br>Interconnected workstreams, broader stakeholder involvement, and more fragmented information. The same six deliverables cover the agreed complexity, with deeper analysis and governance coordination using existing tools.</p>
+<p><strong>Scope determines price.</strong> We agree the initiatives, stakeholder groups, information complexity, and governance and reporting requirements. Fees reflect delivery complexity, not hours. Material scope or fee changes require mutual agreement before additional work proceeds.</p>
+</div><a href="https://calendly.com/cfowler-itexec/30min" target="_blank" rel="noopener noreferrer" class="btn-full">Discuss Your Initiative</a><p class="pricing-note">Complimentary discovery call. No commitment required.</p></div></div>
+<div class="hero-card" style="max-width:700px;margin:2rem auto 0;"><div class="card-label">Optional · After the 30-Day Handoff</div><h3 class="step-title">Post-Stabilization Governance Retainer</h3><p class="problem-body"><strong>$2,000/month</strong> for continued governance oversight, monthly risk review, and decision assurance where needed. The ongoing scope is agreed separately. The retainer is optional and is not required to receive the six deliverables or complete the 30-day engagement.</p></div>
+</div></section>
+<section class="about" id="about"><div class="section-inner"><div class="section-label"><div class="section-label-line"></div><span class="section-label-text">Your Delivery Partner</span></div>
+<h2 class="section-title">Christopher L. Fowler Sr.</h2><div class="about-grid"><div class="about-credentials"><div class="credential-name">Cybersecurity &amp; Technology Delivery Architect</div><div class="credential-title">Founder, Veriscope Flow Systems LLC</div><ul class="credential-list"><li>14 years enterprise IT program management</li><li>Senior Cybersecurity Project Manager, DFIN</li><li>AI and ML implementation, Huntsman International</li><li>Senior IT Program Manager, UNLV</li></ul><div class="cert-row"><span class="cert-badge">PMP</span><span class="cert-badge">CSM</span><span class="cert-badge">CSPO</span><span class="cert-badge">MBA</span></div></div>
+<div class="about-body"><p><strong>I help CIOs, CISOs, and senior IT leaders regain control of at-risk technology and AI initiatives.</strong></p><p>I developed the Flow Intelligence System as a delivery operating model to improve visibility, alignment, governance, and execution. It brings program information together so leaders can see the risks, assign ownership, resolve decisions, and agree what happens next.</p><p>I lead the assessment, validate AI-assisted analysis, and deliver the final governance artifacts and executive briefing. FIS combines senior-level delivery judgment with a defined 30-day process.</p></div></div></div></section>
+<section class="cta-section" id="cta"><div class="section-inner"><h2 class="cta-title">Know what is at risk.<br>Know who owns the next move.</h2><p class="cta-sub">Bring one at-risk technology or AI initiative to a complimentary 30-minute discovery call. We will discuss the decisions, ownership gaps, and governance needs, then determine the right scope.</p><a href="https://calendly.com/cfowler-itexec/30min" target="_blank" rel="noopener noreferrer" class="btn-primary">Schedule Your Discovery Call</a><p class="cta-note">A governed, decision-ready path forward in 30 days.</p></div></section>
+</main><footer><div class="footer-logo">FIS <span>| Veriscope Flow Systems LLC</span></div><div class="footer-copy">© 2026 Veriscope Flow Systems LLC. All rights reserved.</div></footer>
+</body></html>
