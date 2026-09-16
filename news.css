@@ -1,0 +1,20 @@
+#ai-news {background:linear-gradient(130deg,#112240,#0a1628);border-top:1px solid #c9a84c40;border-bottom:1px solid #c9a84c40;scroll-margin-top:95px}
+.ai-news-heading{display:flex;justify-content:space-between;align-items:center;gap:2rem}
+#ai-news .section-title{font-size:clamp(2rem,4vw,3.1rem);margin-bottom:0}
+#ai-news .section-title em{color:var(--gold-light);font-style:normal}
+.ai-news-badge{border:1px solid #c9a84c60;border-radius:30px;color:var(--gold-light);padding:.65rem 1rem;font-size:.78rem;white-space:nowrap}
+.ai-news-intro{color:#b7c4d6;font-size:1rem;line-height:1.7;max-width:660px;margin:1.3rem 0 2rem}
+.ai-news-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.2rem}
+.ai-news-card{background:#0a1628b3;border:1px solid #ffffff20;border-top:2px solid var(--gold);padding:1.7rem;display:flex;flex-direction:column;min-height:245px;transition:border-color .2s}
+.ai-news-card:hover{border-color:var(--gold)}
+.ai-news-meta{color:#b7c4d6;font-size:.75rem;line-height:1.6;margin-bottom:1.2rem}
+.ai-news-card h3{font-family:'Playfair Display',serif;font-size:1.45rem;line-height:1.4;font-weight:700;margin-bottom:1.6rem}
+.ai-news-card h3 a{color:var(--white);text-decoration:none}
+.ai-news-card a:focus-visible,.ai-news-foot a:focus-visible{outline:2px solid var(--gold-light);outline-offset:6px}
+.ai-news-card h3 a:hover{text-decoration:underline;text-decoration-color:var(--gold);text-underline-offset:5px}
+.ai-news-read{margin-top:auto;color:var(--gold-light);font-size:.85rem;text-decoration:none;display:flex;justify-content:space-between}
+.ai-news-foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin-top:1.5rem;font-size:.75rem;color:#b7c4d6;line-height:1.6}
+.ai-news-foot a{color:var(--gold-light)}
+.ai-news-disclosure{color:#a9b8cb;font-size:.72rem;line-height:1.6;margin-top:.8rem}
+@media(max-width:700px){.ai-news-grid{grid-template-columns:1fr}.ai-news-heading{align-items:flex-start}.ai-news-badge{display:none}.ai-news-card{min-height:210px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.ai-news-card{transition:none}}
