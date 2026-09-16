@@ -1,0 +1,45 @@
+name: Publish website and refresh AI news
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    - cron: '23 14 * * *'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v6
+      - name: Refresh dated AI headlines
+        run: python3 build_news.py
+      - name: Prepare public website
+        run: |
+          mkdir _site
+          cp index.html news.css CNAME FIS_Landing_Page.html _site/
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Publish refreshed website
+        id: deployment
+        uses: actions/deploy-pages@v4
