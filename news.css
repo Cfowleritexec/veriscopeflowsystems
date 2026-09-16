@@ -8,6 +8,7 @@
 .ai-news-card{background:#0a1628b3;border:1px solid #ffffff20;border-top:2px solid var(--gold);padding:1.7rem;display:flex;flex-direction:column;min-height:245px;transition:border-color .2s}
 .ai-news-card:hover{border-color:var(--gold)}
 .ai-news-meta{color:#b7c4d6;font-size:.75rem;line-height:1.6;margin-bottom:1.2rem}
+.ai-news-topic{color:var(--gold-light);font-size:.7rem;font-weight:500;letter-spacing:.07em;text-transform:uppercase;margin-bottom:.7rem;line-height:1.5}
 .ai-news-card h3{font-family:'Playfair Display',serif;font-size:1.45rem;line-height:1.4;font-weight:700;margin-bottom:1.6rem}
 .ai-news-card h3 a{color:var(--white);text-decoration:none}
 .ai-news-card a:focus-visible,.ai-news-foot a:focus-visible{outline:2px solid var(--gold-light);outline-offset:6px}
