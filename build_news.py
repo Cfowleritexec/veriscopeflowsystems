@@ -1,4 +1,4 @@
-"""Refresh two AI developments and one AI risk/governance link, without API keys."""
+"""Refresh AI news and risk links while retaining one curated free learning resource."""
 from pathlib import Path
 from urllib.request import Request, urlopen
 from urllib.parse import urlparse
@@ -55,20 +55,23 @@ def build(xml, risk_xml):
         seen.add(url)
         items.append((date, title, url))
     items.sort(key=lambda item: item[0], reverse=True)
-    if len(items) < 2:
+    if not items:
         raise ValueError('Insufficient valid headlines; existing preview preserved.')
     cards = []
-    selected = [(item, 'Google', 'AI Developments') for item in items[:2]]
+    selected = [(items[0], 'Google', 'AI Developments')]
     selected.append((select_risk(risk_xml, now), 'Microsoft', 'AI Risks & Governance'))
     for (date, title, url), publisher, category in selected:
         cards.append(f'''<article class="ai-news-card"><p class="ai-news-topic">{html.escape(category)}</p><p class="ai-news-meta">{publisher} · <time datetime="{date.date()}">{date.strftime('%b %d, %Y')}</time></p><h3><a href="{html.escape(url, quote=True)}" target="_blank" rel="noopener noreferrer">{html.escape(title)}</a></h3><a class="ai-news-read" href="{html.escape(url, quote=True)}" target="_blank" rel="noopener noreferrer" aria-label="Read {html.escape(title, quote=True)} on {publisher} (opens in a new tab)">Read at {publisher} <span aria-hidden="true">↗</span></a></article>''')
+    # Curated resource: provider page verified September 16, 2026 (UTC).
+    # This is a learning resource, not a dated news announcement.
+    cards.insert(1, '''<article class="ai-news-card"><p class="ai-news-topic">AI Learning &amp; Readiness</p><p class="ai-news-meta">IBM SkillsBuild · Free · About 90 minutes</p><h3><a href="https://skillsbuild.org/adult-learners/try-it-before-you-register" target="_blank" rel="noopener noreferrer">Exploring Artificial Intelligence</a></h3><p class="ai-news-meta">Build your understanding of AI at your own pace. Try the course as a guest, with no registration required.</p><a class="ai-news-read" href="https://skillsbuild.org/adult-learners/try-it-before-you-register" target="_blank" rel="noopener noreferrer" aria-label="Find Exploring Artificial Intelligence on IBM SkillsBuild (opens in a new tab)">Explore the free course <span aria-hidden="true">↗</span></a></article>''')
     section = '''<!-- AI NEWS START -->
 <section id="ai-news" aria-labelledby="ai-news-title"><div class="section-inner">
-<div class="ai-news-heading"><div><div class="section-label"><div class="section-label-line"></div><span class="section-label-text">AI News &amp; Developments</span></div><h2 id="ai-news-title" class="section-title">AI moves quickly.<br><em>Stay informed.</em></h2></div><span class="ai-news-badge">From the source ↗</span></div>
-<p class="ai-news-intro">Explore AI developments, risks, and governance as you consider what comes next for your organization.</p>
+<div class="ai-news-heading"><div><div class="section-label"><div class="section-label-line"></div><span class="section-label-text">AI News &amp; Learning</span></div><h2 id="ai-news-title" class="section-title">AI moves quickly.<br><em>Stay informed.</em></h2></div><span class="ai-news-badge">From the source ↗</span></div>
+<p class="ai-news-intro">Stay informed about AI developments, build your understanding, and explore the risks and governance that guide responsible decisions.</p>
 <div class="ai-news-grid">''' + ''.join(cards) + f'''</div>
-<div class="ai-news-foot"><p>Sources: Google &amp; Microsoft · Checked <time datetime="{now.isoformat()}">{now.strftime('%b %d, %Y')} (UTC)</time></p><div><a href="{FEED}" target="_blank" rel="noopener noreferrer">Google feed ↗</a> · <a href="{RISK_FEED}" target="_blank" rel="noopener noreferrer">Microsoft feed ↗</a></div></div>
-<p class="ai-news-disclosure">Publisher announcements, provided for information. Inclusion does not imply endorsement by Veriscope.</p>
+<div class="ai-news-foot"><p>News: Google &amp; Microsoft · News checked <time datetime="{now.isoformat()}">{now.strftime('%b %d, %Y')} (UTC)</time></p><div><a href="{FEED}" target="_blank" rel="noopener noreferrer">Google feed ↗</a> · <a href="{RISK_FEED}" target="_blank" rel="noopener noreferrer">Microsoft feed ↗</a></div></div>
+<p class="ai-news-disclosure">Learning resource: IBM SkillsBuild · Selected Sep 16, 2026. Third-party news and education, provided for information. Inclusion does not imply endorsement by Veriscope.</p>
 </div></section>
 <!-- AI NEWS END -->'''
     path = ROOT / 'index.html'
@@ -80,7 +83,7 @@ def build(xml, risk_xml):
     else:
         page = page.replace('<section class="about" id="about">', section + '\n<section class="about" id="about">')
     path.write_text(page, encoding='utf-8')
-    print('Updated three verified, dated headlines.')
+    print('Updated AI developments and risk news; retained the curated learning resource.')
 
 if __name__ == '__main__':
     if '--cached' in sys.argv:
