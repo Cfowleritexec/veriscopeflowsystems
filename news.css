@@ -9,6 +9,11 @@
 .ai-news-card:hover{border-color:var(--gold)}
 .ai-news-meta{color:#b7c4d6;font-size:.75rem;line-height:1.6;margin-bottom:1.2rem}
 .ai-news-topic{color:var(--gold-light);font-size:.7rem;font-weight:500;letter-spacing:.07em;text-transform:uppercase;margin-bottom:.7rem;line-height:1.5}
+.ai-learning-links{list-style:none;margin-top:auto;padding:0}
+.ai-learning-links li+li{border-top:1px solid #ffffff20}
+.ai-learning-links a{display:flex;align-items:center;justify-content:space-between;gap:1rem;padding:.7rem 0;color:var(--gold-light);text-decoration:none;font-size:.9rem}
+.ai-learning-links a:hover strong{text-decoration:underline;text-underline-offset:4px}
+.ai-learning-links small{display:block;font-size:.7rem;line-height:1.5;color:#b7c4d6;margin-top:.2rem}
 .ai-news-card h3{font-family:'Playfair Display',serif;font-size:1.45rem;line-height:1.4;font-weight:700;margin-bottom:1.6rem}
 .ai-news-card h3 a{color:var(--white);text-decoration:none}
 .ai-news-card a:focus-visible,.ai-news-foot a:focus-visible{outline:2px solid var(--gold-light);outline-offset:6px}
