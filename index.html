@@ -779,6 +779,12 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--gold-light); o
 @media (max-width: 600px) { .hero h1 { font-size: 2.6rem; } .hero-card h2 { font-size: 1.6rem; } .nav-logo { max-width: 50%; } }
 @media (prefers-reduced-motion: reduce) { .fade-up { opacity: 1; } }
 
+/* Preserve the approved artwork on a high contrast surface. */
+.logo-card { display: block; flex-shrink: 0; width: 232px; padding: 9px 10px; background: #fff; border-radius: 4px; }
+.logo-window { display: block; position: relative; width: 100%; aspect-ratio: 1625 / 310; overflow: hidden; }
+.logo-window img { position: absolute; display: block; width: 119.508%; max-width: none; height: auto; left: -9.785%; top: -78.387%; }
+.logo-card:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+@media (max-width: 600px) { .nav-logo.logo-card { width: 190px; max-width: 58%; padding: 7px 8px; } }
 </style>
 <meta name="description" content="Dates slipping? Decisions stuck? Christopher Fowler helps technology leaders see what is blocking progress and decide what happens next. Start with a conversation.">
 <link rel="canonical" href="https://veriscopeflowsystems.com/">
@@ -790,7 +796,7 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--gold-light); o
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 <nav aria-label="Main navigation">
-<a href="#" class="nav-logo">Veriscope <span>| Flow Systems</span></a>
+<a href="#" class="nav-logo logo-card" aria-label="Veriscope Flow Systems home"><span class="logo-window"><img src="assets/veriscope-silver-blue-logo.png" alt="Veriscope Flow Systems" width="1942" height="809"></span></a>
 <ul class="nav-links"><li><a href="#problem">The Problem</a></li><li><a href="#about">Christopher</a></li><li><a href="#diagnostic">Start Here</a></li><li><a href="#how">The Approach</a></li></ul>
 <a href="https://calendly.com/cfowler-itexec/30min" target="_blank" rel="noopener noreferrer" class="nav-cta">Let’s Talk</a>
 </nav>
@@ -858,5 +864,5 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--gold-light); o
 </div></section>
 <!-- AI NEWS END -->
 </details>
-</main><footer><div class="footer-logo">Veriscope <span>| Flow Systems LLC</span></div><div class="footer-copy">© 2026 Veriscope Flow Systems LLC. All rights reserved.</div></footer>
+</main><footer><a href="#" class="footer-logo logo-card" aria-label="Veriscope Flow Systems home"><span class="logo-window"><img src="assets/veriscope-silver-blue-logo.png" alt="Veriscope Flow Systems" width="1942" height="809" loading="lazy"></span></a><div class="footer-copy">© 2026 Veriscope Flow Systems LLC. All rights reserved.</div></footer>
 </body></html>
