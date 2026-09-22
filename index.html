@@ -795,6 +795,34 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--gold-light); o
   .output-price small { display: block; color: var(--muted); font-size: .85rem; line-height: 1.6; margin-top: .2rem; }
   .proposed-total { margin-top: 2rem; font-size: 1.2rem; }
   .pricing-test { margin: 2rem auto 4rem; padding: 1.5rem; border: 1px solid var(--gold); width: calc(100% - 3rem); line-height: 1.7; }
+
+/* Keep the full menu clear of the logo at every screen width. */
+nav { gap: 1.5rem; }
+nav .nav-links { min-width: 0; gap: clamp(.8rem, 2vw, 2rem); }
+nav .nav-links a { display: block; white-space: nowrap; font-size: .78rem; letter-spacing: .04em; }
+nav .nav-cta { flex-shrink: 0; white-space: nowrap; }
+@media (max-width: 1100px) {
+  nav { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: .5rem 1rem; padding: .8rem 1.5rem; }
+  nav .nav-logo { grid-column: 1; grid-row: 1; }
+  nav .nav-cta { grid-column: 2; grid-row: 1; }
+  nav .nav-links { grid-column: 1 / -1; grid-row: 2; display: flex; justify-content: space-between; gap: .5rem; width: 100%; }
+  nav .nav-links a { padding: .65rem 0; font-size: .75rem; }
+  .hero { padding-top: 12rem; }
+  section[id] { scroll-margin-top: 160px; }
+}
+@media (max-width: 600px) {
+  nav { padding: .7rem 1rem; }
+  nav .nav-logo.logo-card { width: 190px; max-width: 100%; }
+  nav .nav-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 1rem; }
+  nav .nav-links a { font-size: .8rem; letter-spacing: .02em; min-height: 44px; display: flex; align-items: center; }
+  .hero { padding-top: 15rem; }
+  section[id] { scroll-margin-top: 210px; }
+}
+@media (max-width: 380px) {
+  nav .nav-links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 1rem; }
+  .hero { padding-top: 15rem; }
+  section[id] { scroll-margin-top: 210px; }
+}
 </style>
 <meta name="description" content="Dates slipping? Decisions stuck? Christopher Fowler helps technology leaders see what is blocking progress and decide what happens next. Start with a conversation.">
 <link rel="canonical" href="https://veriscopeflowsystems.com/">
