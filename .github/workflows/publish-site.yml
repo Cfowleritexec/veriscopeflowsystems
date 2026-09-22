@@ -26,6 +26,7 @@ jobs:
         run: |
           mkdir _site
           cp index.html news.css CNAME FIS_Landing_Page.html _site/
+          cp -R assets _site/
       - uses: actions/upload-pages-artifact@v4
         with:
           path: _site
