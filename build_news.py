@@ -71,7 +71,7 @@ def build(xml, risk_xml):
 <p class="ai-news-intro">Stay informed about AI developments, build your understanding, and explore the risks and governance that guide responsible decisions.</p>
 <div class="ai-news-grid">''' + ''.join(cards) + f'''</div>
 <div class="ai-news-foot"><p>News: Google &amp; Microsoft · News checked <time datetime="{now.isoformat()}">{now.strftime('%b %d, %Y')} (UTC)</time></p><div><a href="{FEED}" target="_blank" rel="noopener noreferrer">Google feed ↗</a> · <a href="{RISK_FEED}" target="_blank" rel="noopener noreferrer">Microsoft feed ↗</a></div></div>
-<p class="ai-news-disclosure">Learning resources: OpenAI, Anthropic &amp; Google · Selected Sep 16, 2026. Third party news and education, provided for information. Inclusion does not imply endorsement by Veriscope.</p>
+<p class="ai-news-disclosure">Learning resources: OpenAI, Anthropic &amp; Google · Selected Sep 16, 2026. Third party news and education, provided for information. Inclusion does not imply endorsement by Veriscope Flow Systems.</p>
 </div></section>
 <!-- AI NEWS END -->'''
     path = ROOT / 'index.html'
