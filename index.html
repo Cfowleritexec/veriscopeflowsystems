@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>30 Day Initiative Alignment | Veriscope Flow Systems</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&amp;family=DM+Sans:wght@300;400;500&amp;display=swap" rel="stylesheet"/>
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -840,67 +841,101 @@ nav .nav-cta { flex-shrink: 0; white-space: nowrap; }
   .hero { padding-top: 18rem; }
   section[id] { scroll-margin-top: 254px; }
 }
+
+/* Streamlined homepage: portrait first, one service explanation, optional detail. */
+section { padding: 3.25rem 4rem; }
+.hero { padding: 8.5rem 4rem 3.5rem; }
+.hero-grid { grid-template-columns: 1.35fr .8fr; gap: 4rem; }
+.hero h1 { font-size: clamp(2.25rem, 3.6vw, 3.5rem); }
+.hero-sub { margin-bottom: 1.5rem; }
+.founder-card { max-width: 360px; justify-self: end; border: 1px solid rgba(201,168,76,.3); background: var(--navy-mid); border-radius: 6px; overflow: hidden; }
+.founder-card .founder-portrait { margin: 0; border-radius: 0; aspect-ratio: 1; object-fit: cover; }
+.founder-caption { padding: 1rem 1.25rem; font-size: .9rem; line-height: 1.6; }
+.founder-caption strong, .founder-caption span { display: block; }
+.founder-caption span { color: var(--muted); margin-bottom: .5rem; }
+.steps-grid { margin-top: 1.75rem; gap: 1rem; }
+.step-card { padding: 1.5rem; }
+.fit-summary { margin-top: 1rem; }
+.offer-grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 2rem; margin-top: 1.75rem; align-items: start; }
+.deliverables-grid { margin: 0; gap: .75rem; }
+.deliverable-item { padding: 1.15rem; min-height: 108px; }
+.pricing-card { margin: 0; width: 100%; }
+.pricing-header, .pricing-body { padding: 1.5rem; }
+.pricing-amount { font-size: 2.75rem; }
+#about .about-body { max-width: 900px; }
+#about .about-body p { margin-bottom: .75rem; }
+.faq { max-width: none; margin-top: 1rem; }
+.faq details { padding: .8rem 0; }
+.faq details > .section-inner, .faq details > div, .faq details > figure { margin-top: 1rem; }
+.faq details .section-title { font-size: 1.6rem; }
+.faq .problem-grid { margin-top: 1.25rem; gap: 2rem; }
+.faq .hero-card { max-width: none !important; margin: 1rem 0 0 !important; }
+.founder-details { max-width: 900px; }
+.cta-section { padding: 3rem 4rem; }
+.cta-sub { margin-bottom: 1.5rem; }
+.supporting-resources { padding-top: 1.25rem; padding-bottom: 1.25rem; }
+section[id], details[id], #pricing { scroll-margin-top: 130px; }
+@media(max-width:900px) {
+ section { padding: 2.5rem 1.5rem; }
+ .hero { padding: 9rem 1.5rem 2.5rem; }
+ .hero-grid { grid-template-columns: 1fr 1fr; gap: 2rem; }
+ .offer-grid { grid-template-columns: 1fr; }
+ .steps-grid { grid-template-columns: repeat(3,1fr); }
+ .deliverables-grid { grid-template-columns: 1fr 1fr; }
+ .cta-section { padding: 2.5rem 1.5rem; }
+}
+@media(max-width:600px) {
+ .hero-grid { grid-template-columns: 1fr; gap: 2rem; }
+ .founder-card { justify-self: start; max-width: 300px; }
+ .steps-grid, .deliverables-grid, .faq .problem-grid { grid-template-columns: 1fr; }
+ .hero h1 { font-size: 2.35rem; }
+ .nav-links a { font-size: .7rem; }
+}
 </style>
-<meta name="description" content="Dates slipping? Decisions stuck? Christopher Fowler helps technology leaders see what is blocking progress and decide what happens next. Start with a conversation.">
-<link rel="canonical" href="https://veriscopeflowsystems.com/">
-<meta property="og:title" content="Your project is slipping. What is stopping the work?">
-<meta property="og:description" content="Talk with Christopher Fowler about missed dates, unclear ownership, and decisions that are holding up your technology project.">
-<meta property="og:url" content="https://veriscopeflowsystems.com/">
-<meta property="og:type" content="website">
-<link rel="stylesheet" href="news.css?v=4"></head>
+<meta content="Dates slipping? Decisions stuck? Christopher Fowler helps technology leaders see what is blocking progress and decide what happens next. Start with a conversation." name="description"/>
+<link href="https://veriscopeflowsystems.com/" rel="canonical"/>
+<meta content="Your project is slipping. What is stopping the work?" property="og:title"/>
+<meta content="Talk with Christopher Fowler about missed dates, unclear ownership, and decisions that are holding up your technology project." property="og:description"/>
+<meta content="https://veriscopeflowsystems.com/" property="og:url"/>
+<meta content="website" property="og:type"/>
+<link href="news.css?v=4" rel="stylesheet"/><meta content="A focused 30 day review of your slipping technology or cybersecurity initiative. Clear risks, named owners, and an evidence-backed next step with Christopher Fowler." name="description"/></head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 <nav aria-label="Main navigation">
-<a href="#" class="nav-logo logo-card" aria-label="Veriscope Flow Systems home"><span class="logo-window"><img src="assets/veriscope-silver-blue-logo.png" alt="Veriscope Flow Systems" width="1942" height="809"></span></a>
-<ul class="nav-links"><li><a href="#problem">The Problem</a></li><li><a href="#about">Christopher</a></li><li><a href="#speaking">Speaking</a></li><li><a href="#diagnostic">Start Here</a></li><li><a href="#how">The Approach</a></li></ul>
-<a href="https://calendly.com/cfowler-itexec/30min" target="_blank" rel="noopener noreferrer" class="nav-cta">Let’s Talk</a>
+<a aria-label="Veriscope Flow Systems home" class="nav-logo logo-card" href="#"><span class="logo-window"><img alt="Veriscope Flow Systems" height="809" src="assets/veriscope-silver-blue-logo.png" width="1942"/></span></a>
+<ul class="nav-links"><li><a href="#how">The service</a></li><li><a href="#about">Christopher</a></li><li><a href="#questions">Questions</a></li></ul>
+<a class="nav-cta" href="https://calendly.com/cfowler-itexec/30min" rel="noopener noreferrer" target="_blank">Let’s Talk</a>
 </nav>
 <main id="main">
 <section class="hero"><div class="hero-grid"><div>
 <p class="brand-promise" style="font-size:1.15rem;line-height:1.6;color:var(--gold-light);margin-bottom:1.25rem;max-width:590px">30 Day Initiative Alignment</p>
-<h1><span style="display:block">More meetings. Higher costs. The same updates.</span> <em style="display:block">Your project still isn’t moving.</em></h1>
-<figure class="hero-story">
-<blockquote><p>I once had an executive point around the room and say, “Look at what it costs us per hour to have everybody sitting in this meeting.”</p></blockquote>
-<figcaption>— Christopher L. Fowler Sr., MBA, PMP</figcaption>
-</figure>
-<p class="hero-sub" style="margin-bottom:1.25rem">That stayed with me. Expensive meetings kept happening. Decisions stayed open. Milestones slipped. Business and technical teams were in the same room, but the work wasn’t moving forward.</p>
+<h1>Your project is slipping.<br/><em>Know what to do next.</em></h1>
 <p class="hero-sub">In 30 days, Veriscope Flow Systems identifies the risks, ownership gaps, and unresolved decisions, with an evidence-backed recommendation to <strong>proceed, correct course, or stop.</strong></p>
-<div class="hero-actions"><a href="https://calendly.com/cfowler-itexec/30min" target="_blank" rel="noopener noreferrer" class="btn-primary">Talk With Christopher</a><a href="#diagnostic" class="btn-ghost">Check Your Project Visibility</a></div>
-<p class="person-intro"><strong>Christopher L. Fowler Sr., MBA, PMP</strong><br>Founder, Veriscope Flow Systems LLC<br>A complimentary 30 minute conversation about your project. No commitment required.</p>
-</div><aside class="hero-card" aria-labelledby="recognition-title"><div class="card-label">Does this sound familiar?</div><h2 id="recognition-title">The next update brings<br>the same open questions.</h2>
-<ul class="pain-list">
-<li class="pain-item"><div class="pain-content"><h3>The date moved again.</h3><p>You still need a clear reason and a credible next step.</p></div></li>
-<li class="pain-item"><div class="pain-content"><h3>A decision is holding up the team.</h3><p>The person who can make it has not been clearly named.</p></div></li>
-<li class="pain-item"><div class="pain-content"><h3>The reports tell different stories.</h3><p>Leadership has to work out which version reflects the facts.</p></div></li>
-</ul><p class="problem-body">Start with the issue taking the most time, money, or leadership attention.</p></aside></div></section>
+<div class="hero-actions"><a class="btn-primary" href="https://calendly.com/cfowler-itexec/30min" rel="noopener noreferrer" target="_blank">Talk With Christopher</a><a class="btn-ghost" href="#how">Explore the review</a></div>
+<p class="person-intro">Complimentary 30 minute conversation. No commitment required.</p>
+</div><aside aria-label="Meet Christopher" class="founder-card"><img alt="Christopher L. Fowler Sr., founder of Veriscope Flow Systems" class="founder-portrait" decoding="async" fetchpriority="high" height="1254" loading="eager" src="assets/christopher-fowler-portrait.jpg" width="1254"/><div class="founder-caption"><strong>Christopher L. Fowler Sr., MBA, PMP</strong><span>Founder, Veriscope Flow Systems LLC</span><a class="inline-link" href="#about">15 years in technology delivery &amp; project leadership</a></div></aside></div></section>
 
-<section class="problem" id="problem"><div class="section-inner"><div class="section-label"><span class="section-label-text">The cost of unclear work</span></div>
-<h2 class="section-title">Every unresolved decision<br>can hold up the next step.</h2>
-<div class="problem-grid"><div><p class="problem-statement">What happens if this stays unresolved for another 30 days?</p><p class="problem-body">People wait for approvals. Work has to be done again. Leaders spend time sorting through updates. A missed decision can affect the budget, a launch, a customer, or the team’s ability to deliver.</p><div class="cost-example" style="margin-top:1.5rem;padding:1.5rem;border-left:3px solid var(--gold);background:var(--navy-mid)"><h3 class="step-title">What does another month cost?</h3><p class="problem-body"><strong>For example:</strong> If your project spends $80,000 a month on staff and vendors, a 30 day delay at that same spending rate means another $80,000 in project spending. Some work may still create value during that time. The question is how much spending the delay could waste.</p><p class="problem-body">Our review starts at <strong>$5,000</strong> and helps you decide what should happen next.</p></div></div>
-<div class="about-body"><p><strong>Find the point where progress stops.</strong> Which decision is waiting? What evidence is missing? Who owns the next action?</p><p><strong>Make the consequence visible.</strong> Identify the time, cost, or business outcome affected by the delay.</p><p><strong>Give leadership a clear next move.</strong> Bring the facts and responsible people together so a decision can be made.</p></div></div></div></section>
-
-<section class="about" id="about"><div class="section-inner">
+<section class="problem" id="how"><div class="section-inner"><div class="section-label"><span class="section-label-text">When a focused review makes sense</span></div><h2 class="section-title">30 Day Initiative Alignment</h2><p class="section-sub" style="margin-top:1rem">A focused, remote review of one slipping technology or cybersecurity project. In 30 days, Veriscope Flow Systems identifies the risks, ownership gaps, and unresolved decisions, with an evidence-backed recommendation to proceed, correct course, or stop.</p><p class="section-sub fit-summary">Business, IT, cybersecurity, and project managers, directors, and leaders responsible for a slipping technology or cybersecurity project.</p>
+<div class="steps-grid"><div class="step-card"><div class="step-week">Week 1</div><h3 class="step-title">Find what needs attention.</h3><p class="step-body">Review the agreed records and speak with the people involved. The Program Risk Brief identifies key risks, missing owners, and decisions that need attention now.</p></div><div class="step-card"><div class="step-week">Weeks 2 and 3</div><h3 class="step-title">Clarify who acts and decides.</h3><p class="step-body">Check conflicting updates, name responsibilities, organize open issues, and set the evidence and approvals needed for the next step.</p></div><div class="step-card"><div class="step-week">Week 4</div><h3 class="step-title">Put the path forward in writing.</h3><p class="step-body">Review the findings with leadership. Hand over all six outputs and editable files covering priorities, owners, open decisions, and recommended next steps. Final decisions remain with the client.</p></div></div><p class="pricing-note">The 30 days starts once the agreed records, access, people, and review dates are ready. The written scope sets delivery and acceptance requirements.</p></div></section>
+<section class="deliverables" id="deliverables"><div class="section-inner"><div class="section-label"><span class="section-label-text">Six included outputs</span></div><h2 class="section-title">Six outputs. One clear path forward.</h2><p class="section-sub">All six outputs are included in the complete 30 day review, starting at $5,000.</p><div class="offer-grid"><div class="deliverables-grid">
+<div class="deliverable-item"><div class="deliverable-text"><strong>Week 1 Program Risk Brief</strong><span>See the main risks and urgent decisions.</span></div></div>
+<div class="deliverable-item"><div class="deliverable-text"><strong>Work and change review</strong><span>Find gaps in tracking and approvals.</span></div></div>
+<div class="deliverable-item"><div class="deliverable-text"><strong>Ownership and decisions list</strong><span>Know who needs to act and decide.</span></div></div>
+<div class="deliverable-item"><div class="deliverable-text"><strong>Shared risk and status list</strong><span>Bring conflicting updates into one view.</span></div></div>
+<div class="deliverable-item"><div class="deliverable-text"><strong>Checks before moving ahead</strong><span>Know what to confirm before spending more.</span></div></div>
+<div class="deliverable-item"><div class="deliverable-text"><strong>Day 30 leadership report</strong><span>Review the evidence and recommended path.</span></div></div>
+</div><div class="pricing-card" id="pricing"><div class="pricing-header"><div class="pricing-name">30 Day Initiative Alignment</div><div class="pricing-amount"><sup>$</sup>5,000</div><div class="pricing-range">Starting fee · Scope and final price agreed in writing</div></div><div class="pricing-body"><div class="about-body"><p><strong>All six outputs for one initiative are included.</strong> Records, interviews, meetings, and review limits are agreed in writing. Broader work is quoted separately. Final scope, fee, payment terms, and review limits are agreed before work begins.</p></div><a class="btn-full" href="https://calendly.com/cfowler-itexec/30min" rel="noopener noreferrer" target="_blank">Start With a Conversation</a><p class="pricing-note">A complimentary 30 minute conversation. No commitment required.</p></div></div></div></div></section><section class="about" id="about"><div class="section-inner">
 <div class="section-label"><span class="section-label-text">The person behind the work</span></div>
 <h2 class="section-title">Meet Christopher L. Fowler Sr.</h2>
-<div class="about-grid"><div class="about-credentials">
-<img class="founder-portrait" src="assets/christopher-fowler-portrait.jpg" alt="Christopher L. Fowler Sr., founder of Veriscope Flow Systems" width="1254" height="1254" loading="lazy" decoding="async">
-<div class="credential-name">Christopher L. Fowler Sr.</div>
-<div class="credential-title">Founder, Veriscope Flow Systems LLC</div>
-<ul class="credential-list">
-<li>15 years in technology delivery, cybersecurity, and program and project management</li>
-<li>Program and project management experience across higher education and financial services</li>
-<li>Program and project management of cloud infrastructure, AI, and enterprise technology initiatives</li>
-</ul><div class="cert-row"><span class="cert-badge">MBA</span><span class="cert-badge">PMP</span><span class="cert-badge">ChatGPT</span><span class="cert-badge">Claude</span></div></div>
 <div class="about-body">
-<p><strong>Christopher helps leaders bridge the gap between business objectives and technical execution.</strong></p>
 <p>Christopher L. Fowler Sr., MBA, PMP, is the founder of Veriscope Flow Systems and a technology delivery, cybersecurity, and program and project management professional with 15 years of experience. His program and project management experience spans higher education, financial services, cloud infrastructure, AI, and enterprise technology initiatives.</p>
-<p>He founded Veriscope Flow Systems to bridge the gap between business and technical teams when they stop working as one. As initiatives evolve, teams can lose their shared understanding. Reporting becomes inconsistent, ownership becomes unclear, and leadership needs reliable information to determine the next step.</p>
-<p>Through the 30 Day Initiative Alignment service, Christopher examines stalled or slipping technology initiatives, identifies risks and ownership gaps, reconciles conflicting information, and develops evidence-backed recommendations to proceed, correct course, or stop. Leadership retains decision authority.</p>
 <p>Christopher has presented to professional and academic audiences and has served in communications leadership within a professional project management association.</p>
 <p><strong>His guiding principle:</strong> business and technology must operate from a shared understanding for leaders to make informed decisions.</p>
-<a href="https://calendly.com/cfowler-itexec/30min" target="_blank" rel="noopener noreferrer" class="inline-link">Discuss your initiative with Christopher</a>
-</div></div></div></section>
-<section class="how-it-works" id="speaking" aria-labelledby="speaking-title"><div class="section-inner">
+<a class="inline-link" href="https://calendly.com/cfowler-itexec/30min" rel="noopener noreferrer" target="_blank">Discuss your initiative with Christopher</a>
+</div><div class="faq founder-details"><details><summary>The meeting that shaped my approach</summary><figure class="hero-story">
+<blockquote><p>I once had an executive point around the room and say, “Look at what it costs us per hour to have everybody sitting in this meeting.”</p></blockquote>
+<figcaption>— Christopher L. Fowler Sr., MBA, PMP</figcaption>
+</figure></details><details id="fis"><summary>The method behind the work</summary><div class="section-inner"><div class="section-label"><span class="section-label-text">The method behind the work</span></div><h2 class="section-title">A shared view of the facts.<br/>Clear owners. Decisions that move.</h2><p class="section-sub">Christopher uses the Flow Intelligence System, or FIS, to connect the project’s records, people, risks, and decisions. He compares what the reports say with what the team can support, checks gaps with the people involved, and documents the next actions.</p></div></details><details id="speaking"><summary>Speaking and professional engagement</summary><div class="section-inner">
 <div class="section-label"><span class="section-label-text">Speaking &amp; professional engagement</span></div>
 <h2 class="section-title" id="speaking-title">A practical perspective on business and technology alignment.</h2>
 <p class="section-sub">Christopher speaks about leadership decisions, accountability gaps, and conflicting information that can cause technology initiatives to lose momentum. His presentation experience includes professional associations and undergraduate and graduate academic audiences.</p>
@@ -909,53 +944,31 @@ nav .nav-cta { flex-shrink: 0; white-space: nowrap; }
 <article class="step-card"><h3 class="step-title">Beyond the Status Report: What Leaders Really Need to Know</h3><p class="step-body">Looking beyond activity updates to risks, evidence, and accountability.</p></article>
 <article class="step-card"><h3 class="step-title">Proceed, Correct Course, or Stop: Making Better Technology Decisions</h3><p class="step-body">Using clearer evidence and decision ownership to determine an initiative's next step.</p></article>
 </div><p class="section-sub" style="margin-top:2rem">Interested in inviting Christopher to speak? Start a conversation about your event, audience, and goals.</p>
-<p style="margin-top:1rem"><a href="https://calendly.com/cfowler-itexec/30min" target="_blank" rel="noopener noreferrer" class="inline-link">Inquire about a speaking engagement</a></p>
-</div></section>
-
-<section class="problem" id="fis"><div class="section-inner"><div class="section-label"><span class="section-label-text">The method behind the work</span></div><h2 class="section-title">A shared view of the facts.<br>Clear owners. Decisions that move.</h2><p class="section-sub">Christopher uses the Flow Intelligence System, or FIS, to connect the project’s records, people, risks, and decisions. He compares what the reports say with what the team can support, checks gaps with the people involved, and documents the next actions.</p></div></section>
-
-<section class="how-it-works" id="diagnostic"><div class="section-inner"><div class="section-label"><span class="section-label-text">Start with five questions</span></div><h2 class="section-title">How clearly can you see<br>your project’s next move?</h2><p class="section-sub">Use these five questions to prepare for a conversation. An unclear answer gives us a place to start.</p>
-<ol class="diagnostic-list"><li>What is holding up progress right now?</li><li>Who owns the next action, and when is it due?</li><li>Which decision is waiting, and who can make it?</li><li>Do the reports agree with what the team is seeing?</li><li>What will another month of delay cost the business?</li></ol>
-<p class="section-sub">Bring one example to a 30 minute conversation with Christopher. Discuss what is happening, what you have tried, and whether a focused review would help. You can describe the situation without sharing private project records.</p><div class="hero-actions" style="margin-top:2rem"><a href="https://calendly.com/cfowler-itexec/30min" target="_blank" rel="noopener noreferrer" class="btn-primary">Talk Through Your Answers</a></div><p class="person-intro">If there is a fit, the next step is a short offer with clear scope and a confirmed fee.</p></div></section>
-
-<section class="problem" id="how"><div class="section-inner"><div class="section-label"><span class="section-label-text">When a focused review makes sense</span></div><h2 class="section-title">30 Day Initiative Alignment</h2><p class="section-sub"><strong>We bridge the gap between business units and technical teams.</strong> When teams work from different reports or priorities, decisions can stall. Veriscope Flow Systems helps them work from shared evidence, clarify who owns each action, and identify who needs to decide, so the groups can work together again.</p><p class="section-sub" style="margin-top:1rem">A focused, remote review of one slipping technology or cybersecurity project. In 30 days, Veriscope Flow Systems identifies the risks, ownership gaps, and unresolved decisions, with an evidence-backed recommendation to proceed, correct course, or stop.</p>
-<div class="steps-grid"><div class="step-card"><div class="step-week">Week 1</div><h3 class="step-title">Find what needs attention.</h3><p class="step-body">Review the agreed records and speak with the people involved. The Program Risk Brief identifies key risks, missing owners, and decisions that need attention now.</p></div><div class="step-card"><div class="step-week">Weeks 2 and 3</div><h3 class="step-title">Clarify who acts and decides.</h3><p class="step-body">Check conflicting updates, name responsibilities, organize open issues, and set the evidence and approvals needed for the next step.</p></div><div class="step-card"><div class="step-week">Week 4</div><h3 class="step-title">Put the path forward in writing.</h3><p class="step-body">Review the findings with leadership. Hand over all six outputs and editable files covering priorities, owners, open decisions, and recommended next steps. Final decisions remain with the client.</p></div></div><p class="pricing-note">The 30 days starts once the agreed records, access, people, and review dates are ready. The written scope sets delivery and acceptance requirements.</p></div></section>
-
-<section class="problem" id="fit"><div class="section-inner"><div class="section-label"><span class="section-label-text">Is this a fit?</span></div><h2 class="section-title">Who this is for</h2><div class="problem-grid"><div class="about-body"><p>Business, IT, cybersecurity, and project managers, directors, and leaders responsible for a slipping technology or cybersecurity project.</p><p>Bring access to the project records, the people involved, and the budget approver needed to act. We confirm who can authorize spending before agreeing the work.</p></div><div class="about-body"><h3 class="step-title">Who this is not for</h3><p>This review does not cover software development, daily project management, emergency response, repairs, or implementation.</p><p>Any future AI system would require a separate scope, price, and agreement. It is not included in this review.</p></div></div></div></section>
-
-<section class="deliverables" id="deliverables"><div class="section-inner"><div class="section-label"><span class="section-label-text">Six included outputs</span></div><h2 class="section-title">Clear facts. Named owners.<br>A recommended next step.</h2><p class="section-sub">All six outputs are included in the complete 30 day review, starting at $5,000.</p><div class="deliverables-grid">
-<div class="deliverable-item"><div class="deliverable-text"><strong>Week 1 Program Risk Brief</strong><span>See the main risks and urgent decisions.</span><p class="output-price">$2,300 <small>proposed separately · included in the complete review</small></p></div></div>
-<div class="deliverable-item"><div class="deliverable-text"><strong>Work and change review</strong><span>Find gaps in tracking and approvals.</span><p class="output-price">$1,750 <small>proposed separately · included in the complete review</small></p></div></div>
-<div class="deliverable-item"><div class="deliverable-text"><strong>Ownership and decisions list</strong><span>Know who needs to act and decide.</span><p class="output-price">$1,450 <small>proposed separately · included in the complete review</small></p></div></div>
-<div class="deliverable-item"><div class="deliverable-text"><strong>Shared risk and status list</strong><span>Bring conflicting updates into one view.</span><p class="output-price">$1,300 <small>proposed separately · included in the complete review</small></p></div></div>
-<div class="deliverable-item"><div class="deliverable-text"><strong>Checks before moving ahead</strong><span>Know what to confirm before spending more.</span><p class="output-price">$1,450 <small>proposed separately · included in the complete review</small></p></div></div>
-<div class="deliverable-item"><div class="deliverable-text"><strong>Day 30 leadership report</strong><span>Review the evidence and recommended path.</span><p class="output-price">$1,750 <small>proposed separately · included in the complete review</small></p></div></div>
-</div><p class="proposed-total">Proposed separate service total: <strong>$10,000</strong></p><p class="section-sub">Proposed itemized prices require separate scope and timing. They are not validated market values. All six outputs are included in the complete review, starting at $5,000.</p></div></section>
-
-<section class="pricing" id="pricing"><div class="section-inner"><div class="section-label"><span class="section-label-text">Scope and investment</span></div><h2 class="section-title" style="text-align:center">Agree the work before it begins.</h2><div class="pricing-card"><div class="pricing-header"><div class="pricing-name">30 Day Initiative Alignment</div><div class="pricing-amount"><sup>$</sup>5,000</div><div class="pricing-range">Starting fee · Scope and final price agreed in writing</div></div><div class="pricing-body"><div class="about-body"><p><strong>All six outputs for one initiative are included.</strong> Records, interviews, meetings, and review limits are agreed in writing. Broader work is quoted separately. Final scope, fee, payment terms, and review limits are agreed before work begins.</p><p>Before work starts, we agree what will be reviewed, meeting time, review rounds, responsibilities, and delivery dates. Additional work requires an agreed change to the scope and fee.</p></div><a href="https://calendly.com/cfowler-itexec/30min" target="_blank" rel="noopener noreferrer" class="btn-full">Start With a Conversation</a><p class="pricing-note">A complimentary 30 minute conversation. No commitment required.</p></div></div>
-<div class="hero-card" style="max-width:700px;margin:2rem auto 0"><div class="card-label">Optional support after Day 30</div><h3 class="step-title">Keep the project picture current.</h3><p class="problem-body"><strong>$2,000 per month.</strong> Includes one review of agreed updates, refreshed risk and decision records, and one leadership briefing each month. Written limits apply. No daily project management or implementation. New initiatives or major changes require a separate scope.</p></div></div></section>
-
-
-
+<p style="margin-top:1rem"><a class="inline-link" href="https://calendly.com/cfowler-itexec/30min" rel="noopener noreferrer" target="_blank">Inquire about a speaking engagement</a></p>
+</div></details></div></div></section>
 <section class="problem" id="questions"><div class="section-inner"><div class="section-label"><span class="section-label-text">Before we begin</span></div><h2 class="section-title">A clear starting point.</h2><div class="faq">
 <details id="client-involvement"><summary>What does our team need to provide?</summary><p>A named sponsor, access to the budget approver, the agreed plans and project records, access to the relevant people, and time to check findings. We agree the number of sessions, evidence limits, response dates, and acceptance criteria before the delivery period begins. Delays or material changes are documented and the schedule is reviewed together.</p></details>
 <details id="day-30"><summary>What should be clear by Day 30?</summary><p>Leadership receives documented risks and next actions, named owners or clearly flagged ownership gaps, open decisions and the evidence they need, and a recommended path forward. The client retains final decision authority. The written scope defines how the handoff is accepted.</p></details>
 <details><summary>What work is outside the engagement?</summary><p>The engagement covers the agreed review, decision structure, and handoff. It excludes software development, daily project management, emergency response, repairs, integrations, and implementation. Any future AI system requires its own scope, price, and agreement.</p></details>
 <details id="ai-delivery"><summary>How are findings checked and information handled?</summary><p>AI can help compare records, flag gaps, and draft summaries using tools and handling arrangements approved for the engagement. Christopher checks findings against the evidence and stakeholder context and remains accountable for the final work. Leaders retain decision authority. Any NIST review is not certification.</p></details>
 <details><summary>Can an IT provider or adviser make an introduction?</summary><p>Yes. If a client has a project with slipping dates, unclear ownership, or conflicting updates, a conversation can establish whether a focused review would help. Agree any client introduction and information sharing with the client first.</p></details>
-</div></div></section>
-
-<section class="cta-section" id="cta"><div class="section-inner"><h2 class="cta-title">Which part of your project<br>is hardest to get a clear answer on?</h2><p class="cta-sub">Bring that question to Christopher. Start with what is happening, where the work is stuck, and what it means for your business.</p><a href="https://calendly.com/cfowler-itexec/30min" target="_blank" rel="noopener noreferrer" class="btn-primary">Talk With Christopher</a><p class="cta-note">30 minutes. One project. A conversation about the next step.</p></div></section>
+<details id="problem"><summary>Why do unresolved decisions matter?</summary><div class="section-inner"><div class="section-label"><span class="section-label-text">The cost of unclear work</span></div>
+<h2 class="section-title">Every unresolved decision<br/>can hold up the next step.</h2>
+<div class="problem-grid"><div><p class="problem-statement">What happens if this stays unresolved for another 30 days?</p><p class="problem-body">People wait for approvals. Work has to be done again. Leaders spend time sorting through updates. A missed decision can affect the budget, a launch, a customer, or the team’s ability to deliver.</p><div class="cost-example" style="margin-top:1.5rem;padding:1.5rem;border-left:3px solid var(--gold);background:var(--navy-mid)"><h3 class="step-title">What does another month cost?</h3><p class="problem-body"><strong>For example:</strong> If your project spends $80,000 a month on staff and vendors, a 30 day delay at that same spending rate means another $80,000 in project spending. Some work may still create value during that time. The question is how much spending the delay could waste.</p><p class="problem-body">Our review starts at <strong>$5,000</strong> and helps you decide what should happen next.</p></div></div>
+<div class="about-body"><p><strong>Find the point where progress stops.</strong> Which decision is waiting? What evidence is missing? Who owns the next action?</p><p><strong>Make the consequence visible.</strong> Identify the time, cost, or business outcome affected by the delay.</p><p><strong>Give leadership a clear next move.</strong> Bring the facts and responsible people together so a decision can be made.</p></div></div></div></details><details id="diagnostic"><summary>How should I prepare for a conversation?</summary><div class="section-inner"><div class="section-label"><span class="section-label-text">Start with five questions</span></div><h2 class="section-title">How clearly can you see<br/>your project’s next move?</h2><p class="section-sub">Use these five questions to prepare for a conversation. An unclear answer gives us a place to start.</p>
+<ol class="diagnostic-list"><li>What is holding up progress right now?</li><li>Who owns the next action, and when is it due?</li><li>Which decision is waiting, and who can make it?</li><li>Do the reports agree with what the team is seeing?</li><li>What will another month of delay cost the business?</li></ol>
+<p class="section-sub">Bring one example to a 30 minute conversation with Christopher. Discuss what is happening, what you have tried, and whether a focused review would help. You can describe the situation without sharing private project records.</p><div class="hero-actions" style="margin-top:2rem"><a class="btn-primary" href="https://calendly.com/cfowler-itexec/30min" rel="noopener noreferrer" target="_blank">Talk Through Your Answers</a></div><p class="person-intro">If there is a fit, the next step is a short offer with clear scope and a confirmed fee.</p></div></details><details><summary>Are individual outputs available separately?</summary><div><p><strong>Week 1 Program Risk Brief</strong></p><p class="output-price">$2,300 <small>proposed separately · included in the complete review</small></p><p><strong>Work and change review</strong></p><p class="output-price">$1,750 <small>proposed separately · included in the complete review</small></p><p><strong>Ownership and decisions list</strong></p><p class="output-price">$1,450 <small>proposed separately · included in the complete review</small></p><p><strong>Shared risk and status list</strong></p><p class="output-price">$1,300 <small>proposed separately · included in the complete review</small></p><p><strong>Checks before moving ahead</strong></p><p class="output-price">$1,450 <small>proposed separately · included in the complete review</small></p><p><strong>Day 30 leadership report</strong></p><p class="output-price">$1,750 <small>proposed separately · included in the complete review</small></p><p class="proposed-total">Proposed separate service total: <strong>$10,000</strong></p><p class="section-sub">Proposed itemized prices require separate scope and timing. They are not validated market values. All six outputs are included in the complete review, starting at $5,000.</p></div></details><details><summary>Is support available after Day 30?</summary><div class="hero-card" style="max-width:700px;margin:2rem auto 0"><div class="card-label">Optional support after Day 30</div><h3 class="step-title">Keep the project picture current.</h3><p class="problem-body"><strong>$2,000 per month.</strong> Includes one review of agreed updates, refreshed risk and decision records, and one leadership briefing each month. Written limits apply. No daily project management or implementation. New initiatives or major changes require a separate scope.</p></div></details></div></div></section>
+<section class="cta-section" id="cta"><div class="section-inner"><h2 class="cta-title">Which part of your project<br/>is hardest to get a clear answer on?</h2><p class="cta-sub">Bring that question to Christopher. Start with what is happening, where the work is stuck, and what it means for your business.</p><a class="btn-primary" href="https://calendly.com/cfowler-itexec/30min" rel="noopener noreferrer" target="_blank">Talk With Christopher</a><p class="cta-note">30 minutes. One project. A conversation about the next step.</p></div></section>
 <details class="supporting-resources"><summary>Additional resources: AI news and learning</summary>
 <!-- AI NEWS START -->
-<section id="ai-news" aria-labelledby="ai-news-title"><div class="section-inner">
-<div class="ai-news-heading"><div><div class="section-label"><div class="section-label-line"></div><span class="section-label-text">AI News &amp; Learning</span></div><h2 id="ai-news-title" class="section-title">AI moves quickly.<br><em>Stay informed.</em></h2></div><span class="ai-news-badge">From the source ↗</span></div>
+<section aria-labelledby="ai-news-title" id="ai-news"><div class="section-inner">
+<div class="ai-news-heading"><div><div class="section-label"><div class="section-label-line"></div><span class="section-label-text">AI News &amp; Learning</span></div><h2 class="section-title" id="ai-news-title">AI moves quickly.<br/><em>Stay informed.</em></h2></div><span class="ai-news-badge">From the source ↗</span></div>
 <p class="ai-news-intro">Stay informed about AI developments, build your understanding, and explore the risks and governance that guide responsible decisions.</p>
-<div class="ai-news-grid"><article class="ai-news-card"><p class="ai-news-topic">AI Developments</p><p class="ai-news-meta">Google · <time datetime="2026-09-15">Sep 15, 2026</time></p><h3><a href="https://blog.google/innovation-and-ai/technology/ai/ai-for-societal-impact/" target="_blank" rel="noopener noreferrer">AI for Societal Impact</a></h3><a class="ai-news-read" href="https://blog.google/innovation-and-ai/technology/ai/ai-for-societal-impact/" target="_blank" rel="noopener noreferrer" aria-label="Read AI for Societal Impact on Google (opens in a new tab)">Read at Google <span aria-hidden="true">↗</span></a></article><article class="ai-news-card"><p class="ai-news-topic">AI Learning &amp; Readiness</p><p class="ai-news-meta">Free official learning resources · Self paced</p><h3>Learn ChatGPT,<br>Claude &amp; Gemini</h3><ul class="ai-learning-links"><li><a href="https://academy.openai.com/" target="_blank" rel="noopener noreferrer"><span><strong>ChatGPT</strong><small>OpenAI Academy · Courses &amp; tutorials</small></span><span aria-hidden="true">↗</span></a></li><li><a href="https://academy.claude.com/" target="_blank" rel="noopener noreferrer"><span><strong>Claude</strong><small>Claude Academy · Practical AI skills</small></span><span aria-hidden="true">↗</span></a></li><li><a href="https://support.google.com/gemini/answer/13275745?hl=en" target="_blank" rel="noopener noreferrer"><span><strong>Gemini</strong><small>Google’s guide · Getting started</small></span><span aria-hidden="true">↗</span></a></li></ul></article><article class="ai-news-card"><p class="ai-news-topic">AI Risks &amp; Governance</p><p class="ai-news-meta">Microsoft · <time datetime="2026-09-14">Sep 14, 2026</time></p><h3><a href="https://microsoft.ai/news/mai-code-of-conduct/" target="_blank" rel="noopener noreferrer">Humanist AI in practice: A public consultation on our Code of Conduct for MAI Models</a></h3><a class="ai-news-read" href="https://microsoft.ai/news/mai-code-of-conduct/" target="_blank" rel="noopener noreferrer" aria-label="Read Humanist AI in practice: A public consultation on our Code of Conduct for MAI Models on Microsoft (opens in a new tab)">Read at Microsoft <span aria-hidden="true">↗</span></a></article></div>
-<div class="ai-news-foot"><p>News: Google &amp; Microsoft · News checked <time datetime="2026-09-16T06:23:24.576413+00:00">Sep 16, 2026 (UTC)</time></p><div><a href="https://blog.google/innovation-and-ai/technology/ai/rss/" target="_blank" rel="noopener noreferrer">Google feed ↗</a> · <a href="https://blogs.microsoft.com/on-the-issues/feed/" target="_blank" rel="noopener noreferrer">Microsoft feed ↗</a></div></div>
+<div class="ai-news-grid"><article class="ai-news-card"><p class="ai-news-topic">AI Developments</p><p class="ai-news-meta">Google · <time datetime="2026-09-15">Sep 15, 2026</time></p><h3><a href="https://blog.google/innovation-and-ai/technology/ai/ai-for-societal-impact/" rel="noopener noreferrer" target="_blank">AI for Societal Impact</a></h3><a aria-label="Read AI for Societal Impact on Google (opens in a new tab)" class="ai-news-read" href="https://blog.google/innovation-and-ai/technology/ai/ai-for-societal-impact/" rel="noopener noreferrer" target="_blank">Read at Google <span aria-hidden="true">↗</span></a></article><article class="ai-news-card"><p class="ai-news-topic">AI Learning &amp; Readiness</p><p class="ai-news-meta">Free official learning resources · Self paced</p><h3>Learn ChatGPT,<br/>Claude &amp; Gemini</h3><ul class="ai-learning-links"><li><a href="https://academy.openai.com/" rel="noopener noreferrer" target="_blank"><span><strong>ChatGPT</strong><small>OpenAI Academy · Courses &amp; tutorials</small></span><span aria-hidden="true">↗</span></a></li><li><a href="https://academy.claude.com/" rel="noopener noreferrer" target="_blank"><span><strong>Claude</strong><small>Claude Academy · Practical AI skills</small></span><span aria-hidden="true">↗</span></a></li><li><a href="https://support.google.com/gemini/answer/13275745?hl=en" rel="noopener noreferrer" target="_blank"><span><strong>Gemini</strong><small>Google’s guide · Getting started</small></span><span aria-hidden="true">↗</span></a></li></ul></article><article class="ai-news-card"><p class="ai-news-topic">AI Risks &amp; Governance</p><p class="ai-news-meta">Microsoft · <time datetime="2026-09-14">Sep 14, 2026</time></p><h3><a href="https://microsoft.ai/news/mai-code-of-conduct/" rel="noopener noreferrer" target="_blank">Humanist AI in practice: A public consultation on our Code of Conduct for MAI Models</a></h3><a aria-label="Read Humanist AI in practice: A public consultation on our Code of Conduct for MAI Models on Microsoft (opens in a new tab)" class="ai-news-read" href="https://microsoft.ai/news/mai-code-of-conduct/" rel="noopener noreferrer" target="_blank">Read at Microsoft <span aria-hidden="true">↗</span></a></article></div>
+<div class="ai-news-foot"><p>News: Google &amp; Microsoft · News checked <time datetime="2026-09-16T06:23:24.576413+00:00">Sep 16, 2026 (UTC)</time></p><div><a href="https://blog.google/innovation-and-ai/technology/ai/rss/" rel="noopener noreferrer" target="_blank">Google feed ↗</a> · <a href="https://blogs.microsoft.com/on-the-issues/feed/" rel="noopener noreferrer" target="_blank">Microsoft feed ↗</a></div></div>
 <p class="ai-news-disclosure">Learning resources: OpenAI, Anthropic &amp; Google · Selected Sep 16, 2026. Third party news and education, provided for information. Inclusion does not imply endorsement by Veriscope Flow Systems.</p>
 </div></section>
 <!-- AI NEWS END -->
 </details>
-</main><footer><a href="#" class="footer-logo logo-card" aria-label="Veriscope Flow Systems home"><span class="logo-window"><img src="assets/veriscope-silver-blue-logo.png" alt="Veriscope Flow Systems" width="1942" height="809" loading="lazy"></span></a><div class="footer-copy">© 2026 Veriscope Flow Systems LLC. All rights reserved.</div></footer>
+</main><footer><a aria-label="Veriscope Flow Systems home" class="footer-logo logo-card" href="#"><span class="logo-window"><img alt="Veriscope Flow Systems" height="809" loading="lazy" src="assets/veriscope-silver-blue-logo.png" width="1942"/></span></a><div class="footer-copy">© 2026 Veriscope Flow Systems LLC. All rights reserved.</div></footer>
 </body></html>
