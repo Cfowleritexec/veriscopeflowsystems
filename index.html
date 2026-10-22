@@ -792,12 +792,12 @@ a:focus-visible, summary:focus-visible { outline: 3px solid var(--gold-light); o
 @media (max-width: 600px) { .hero h1 { font-size: 2.6rem; } .hero-card h2 { font-size: 1.6rem; } .nav-logo { max-width: 50%; } }
 @media (prefers-reduced-motion: reduce) { .fade-up { opacity: 1; } }
 
-/* Preserve the approved artwork on a high contrast surface. */
-.logo-card { display: block; flex-shrink: 0; width: 232px; padding: 9px 10px; background: #fff; border-radius: 4px; }
-.logo-window { display: block; position: relative; width: 100%; aspect-ratio: 1625 / 310; overflow: hidden; }
-.logo-window img { position: absolute; display: block; width: 119.508%; max-width: none; height: auto; left: -9.785%; top: -78.387%; }
+/* Approved primary logo on the existing navy background. */
+.logo-card { display: block; flex-shrink: 0; width: 232px; padding: 0; background: transparent; border-radius: 4px; }
+.logo-window { display: block; width: 100%; }
+.logo-window img { display: block; width: 100%; max-width: 100%; height: auto; }
 .logo-card:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
-@media (max-width: 600px) { .nav-logo.logo-card { width: 190px; max-width: 58%; padding: 7px 8px; } }
+@media (max-width: 600px) { .nav-logo.logo-card { width: 190px; max-width: 58%; padding: 0; } }
 
   .hero h1 { font-size: clamp(2.15rem, 4vw, 3.65rem); }
   .offer-question { font-size: 1.3rem; line-height: 1.5; color: var(--gold-light); margin-bottom: 1rem; }
@@ -902,7 +902,7 @@ section[id], details[id], #pricing { scroll-margin-top: 130px; }
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 <nav aria-label="Main navigation">
-<a aria-label="Veriscope Flow Systems home" class="nav-logo logo-card" href="#"><span class="logo-window"><img alt="Veriscope Flow Systems" height="809" src="assets/veriscope-silver-blue-logo.png" width="1942"/></span></a>
+<a aria-label="Veriscope Flow Systems home" class="nav-logo logo-card" href="#"><span class="logo-window"><img alt="Veriscope Flow Systems"  src="assets/Veriscope_Logo_White_Transparent.png" /></span></a>
 <ul class="nav-links"><li><a href="#how">The service</a></li><li><a href="#about">Christopher</a></li><li><a href="#questions">Questions</a></li></ul>
 <a class="nav-cta" href="https://calendly.com/cfowler-itexec/30min" rel="noopener noreferrer" target="_blank">Let’s Talk</a>
 </nav>
@@ -969,5 +969,5 @@ section[id], details[id], #pricing { scroll-margin-top: 130px; }
 </div></section>
 <!-- AI NEWS END -->
 </details>
-</main><footer><a aria-label="Veriscope Flow Systems home" class="footer-logo logo-card" href="#"><span class="logo-window"><img alt="Veriscope Flow Systems" height="809" loading="lazy" src="assets/veriscope-silver-blue-logo.png" width="1942"/></span></a><div class="footer-copy">© 2026 Veriscope Flow Systems LLC. All rights reserved.</div></footer>
+</main><footer><a aria-label="Veriscope Flow Systems home" class="footer-logo logo-card" href="#"><span class="logo-window"><img alt="Veriscope Flow Systems"  loading="lazy" src="assets/Veriscope_Logo_White_Transparent.png" /></span></a><div class="footer-copy">© 2026 Veriscope Flow Systems LLC. All rights reserved.</div></footer>
 </body></html>
